@@ -1,4 +1,4 @@
-env: dev
+env: prod
 collections:
   authors:
     output: true
