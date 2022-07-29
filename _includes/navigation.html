@@ -1,11 +1,6 @@
 <nav>
   {% for item in site.data.navigation %}
-    {% if site.env == "prod" %}
-      {% assign link = '/jekyll-demo' | append: item.link %}
-    {% else %}
-    {% assign link = item.link %}
-    {% endif %}
-    <a href="{{ link }}" {% if page.url == item.link %} class="nav-active" {% endif %}>
+    <a href="{{site.rootPath}}{{ item.link }}" {% if page.url == item.link %} class="nav-active" {% endif %}>
       {{ item.name }}
     </a>
   {% endfor %}

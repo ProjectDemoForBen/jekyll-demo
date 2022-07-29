@@ -1,4 +1,5 @@
 env: dev
+rootPath: ''
 collections:
   authors:
     output: true

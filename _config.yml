@@ -1,4 +1,5 @@
 env: prod
+rootPath: '/jekyll-demo'
 collections:
   authors:
     output: true
